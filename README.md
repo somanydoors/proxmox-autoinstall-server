@@ -6,7 +6,7 @@ Containerized Proxmox Autoinstall answer file server. Created using code sourced
 
 To build the image, run:
 
-`docker build -t proxmox-autoinstall-server .`
+`docker build -t ghcr.io/somanydoors/proxmox-autoinstall-server .`
 
 ## Usage
 
