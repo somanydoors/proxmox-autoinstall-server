@@ -6,7 +6,9 @@ ENV ANSWER_FILE_DIR=/config/answers
 RUN apt-get update && \
 	apt-get install -y \
 		python3-aiohttp \
-		python3-tomlkit
+		python3-tomlkit \
+	&& \
+	apt-get clean
 
 WORKDIR /auto-install-server
 
