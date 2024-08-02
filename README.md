@@ -19,6 +19,7 @@ To build the image, run:
     docker run 
         -d \
         -p 8000:8000 \
+        -v config:/config \
         --name proxmox-autoinstall-server \
         ghcr.io/somanydoors/proxmox-autoinstall-server
     ```
