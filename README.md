@@ -14,7 +14,14 @@ To build the image, run:
 2. `mkdir config`
 3. Create `config/default.toml`
 4. For each host, create `answer-files/answers/${MAC_ADDRESS}.toml`
-5. Run `docker run --name proxmox-autoinstall-server -p 8000:8000 -d somanydoors/proxmox-autoinstall-server`
+5. Run:
+    ```bash
+    docker run 
+        -d \
+        -p 8000:8000 \
+        --name proxmox-autoinstall-server \
+        ghcr.io/somanydoors/proxmox-autoinstall-server
+    ```
 
 ### Template Answer File
 
