@@ -3,6 +3,7 @@
 import logging
 import json
 import pathlib
+import os
 
 try:
     import tomlkit
@@ -22,8 +23,8 @@ On Debian-based distributions, you should be able to install them via:
 
     raise e
 
-DEFAULT_ANSWER_FILE_PATH = pathlib.Path("./config/default.toml")
-ANSWER_FILE_DIR = pathlib.Path("./config/answers/")
+DEFAULT_ANSWER_FILE_PATH = pathlib.Path(os.getenv('DEFAULT_ANSWER_FILE_PATH'))
+ANSWER_FILE_DIR = pathlib.Path(os.getenv('ANSWER_FILE_DIR'))
 
 routes = web.RouteTableDef()
 
