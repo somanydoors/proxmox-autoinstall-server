@@ -13,7 +13,7 @@ To build the image, run:
 1. [Create a Proxmox install ISO pointed at your server's IP or hostname]()
 2. `mkdir config`
 3. Create `config/default.toml`
-4. For each host, create `answer-files/answers/${MAC_ADDRESS}.toml`
+4. For each host, create `config/answers/${MAC_ADDRESS}.toml`
 5. Run:
     ```bash
     docker run \
