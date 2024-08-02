@@ -16,7 +16,7 @@ To build the image, run:
 4. For each host, create `answer-files/answers/${MAC_ADDRESS}.toml`
 5. Run:
     ```bash
-    docker run 
+    docker run \
         -d \
         -p 8000:8000 \
         -v config:/config \
