@@ -8,12 +8,12 @@ RUN apt update && \
 		python3-aiohttp \
 		python3-tomlkit
 
-WORKDIR /srv/proxmox/auto-install-server
+WORKDIR /auto-install-server
 
-RUN chmod 700 /srv/proxmox/auto-install-server
+RUN chmod 700 /auto-install-server
 
-RUN mkdir /srv/proxmox/auto-install-server/config
+RUN mkdir /config
 
-COPY --chmod=755 server.py /srv/proxmox/auto-install-server/server.py
+COPY --chmod=755 server.py /auto-install-server/server.py
 
-CMD ["/srv/proxmox/auto-install-server/server.py"]
+CMD ["/auto-install-server/server.py"]
