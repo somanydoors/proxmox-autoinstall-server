@@ -48,3 +48,10 @@ filesystem = "zfs"
 zfs.raid = "raid1"
 disk_list = ["sda", "sdb"]
 ```
+
+### Environment Variables
+
+| Name | Description | Default |
+| ---- | ----------- | ------- |
+| `DEFAULT_ANSWER_FILE_PATH` | Path of the answer file that will be used if not MAC address match is found. Must be a valid answer file to start the server. | `/config/default.toml` |
+| `ANSWER_FILE_DIR` | Path to the directory containing answer files for individual hosts. | `/config/answers` |
